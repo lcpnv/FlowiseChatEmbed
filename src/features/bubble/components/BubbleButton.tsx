@@ -86,6 +86,7 @@ export const BubbleButton = (props: Props) => {
   return (
     <Show when={!isSmallScreen() || !props.isBotOpened} keyed>
       <button
+        aria-label="Open chatbot"
         part="button"
         onClick={handleButtonClick}
         onMouseDown={onMouseDown}
@@ -123,7 +124,7 @@ export const BubbleButton = (props: Props) => {
               width: `${buttonSize * 0.6}px`,
               height: `${buttonSize * 0.6}px`,
             }}
-            alt="Bubble button icon"
+            alt="Open chatbot"
           />
         </Show>
 
