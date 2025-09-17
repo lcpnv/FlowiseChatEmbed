@@ -769,7 +769,7 @@ export const WorkflowTreeView = (props: WorkflowTreeViewProps) => {
                 <button
                   onClick={copyToClipboard}
                   class="text-gray-500 hover:text-gray-700 transition-colors p-1 rounded hover:bg-gray-100"
-                  title="Copy to clipboard"
+                  title="Kopieer naar klembord"
                 >
                   {copied() ? <CheckIcon /> : <CopyIcon />}
                 </button>

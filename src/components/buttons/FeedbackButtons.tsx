@@ -22,7 +22,7 @@ export const CopyToClipboardButton = (props: RatingButtonProps) => {
         props.class
       }
       style={{ background: 'transparent', border: 'none' }}
-      title="Copy to clipboard"
+      title="Kopieer naar klembord"
     >
       <Show when={!props.isLoading} fallback={<Spinner class="text-white" />}>
         <ClipboardIcon color={props.feedbackColor ?? defaultFeedbackColor} class={'send-icon flex ' + (props.disableIcon ? 'hidden' : '')} />
